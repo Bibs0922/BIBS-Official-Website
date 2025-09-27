@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="/images/logo.jpg">
+    <title>Boston International Business School</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="shared.css">
+    <script defer src="index.js"></script>
+    <script defer src="shared.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html" class="logo"><img src="/images/logo.jpg" alt="BIBS Logo"></a>
+        <nav class="main-nav">
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="about/about.html">ABOUT <span class="arrow-down"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about/leading-professors/leading-professors.html">LEADING PROFESSORS</a></li>
+                        <li><a href="about/photo-gallery/photo-gallery.html">PHOTO GALLERY OF BIBS</a></li>
+                    </ul>
+                </li>
+                <li><a href="#index_events">EVENTS</a></li>
+                <li><a href="contact/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>This is the main content of my web page.</p>
+        <div id="index_events" class="index_events">
+            <h2>Events</h2>
+            <ul>
+                <li>Event 1: Description of event 1.</li>
+                <li>Event 2: Description of event 2.</li>
+                <li>Event 3: Description of event 3.</li>
+            </ul>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <h4>NAVIGATION</h4>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="footer-parent-link"><a href="about/about.html">ABOUT</a></li>
+                    <li class="footer-sub-link"><a href="about/leading-professors/leading-professors.html">&ndash; LEADING PROFESSORS</a></li>
+                    <li class="footer-sub-link"><a href="about/photo-gallery/photo-gallery.html">&ndash; PHOTO GALLERY OF BIBS</a></li>
+                    <li><a href="#index_events">EVENTS</a></li>
+                    <li><a href="contact/contact.html">CONTACT</a></li>
+                </ul>   
+            </div>
+            <div class="footer-contact">
+                <h4>CONTACT US</h4>
+                <p><strong>Location:</strong> 123 University Ave, Boston, MA 02115<br>
+                   <strong>Email:</strong> <a href="mailto:info@bibs.edu">info@bibs.edu</a><br>
+                   <strong>Phone:</strong> <a href="tel:+16175551234">(617) 555-1234</a></p>
+                <p class="quote">"See the world as you want it to be and learn how to make it that way."</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
