@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="main-header">
-        <a href="index.html" class="logo"><img src="/images/logo.jpg" alt="BIBS Logo"></a>
+        <a href="index.html" class="logo"><img src="images/logo.jpg" alt="BIBS Logo"></a>
         <nav class="main-nav">
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -32,7 +32,32 @@
         </nav>
     </header>
     <main>
-        <p>This is the main content of my web page.</p>
+        <section class="hero-slider">
+            <!-- Slides will be injected by JS, but content is here -->
+            <div class="hero-content">
+                <h1>Boston International Business School</h1>
+                <a href="about/about.html" class="btn btn--hero">Learn More</a>
+            </div>
+    
+            <!-- Slider Controls -->
+            <button class="slider-btn slider-btn--left">&larr;</button>
+            <button class="slider-btn slider-btn--right">&rarr;</button>
+            <div class="dots-container"></div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/scene/scene24.png" alt="University campus building">
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p class="about-subtitle">Elevate Your Business Acumen</p>
+                    <p>Boston International Business School (BIBS) offers innovative business education and a supportive environment for future leaders. Our faculty and students work together to achieve academic and professional excellence.</p>
+                </div>
+            </div>
+        </section>
+
         <div id="index_events" class="index_events">
             <h2>Events</h2>
             <ul>

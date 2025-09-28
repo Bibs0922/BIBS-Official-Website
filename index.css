@@ -1,0 +1,227 @@
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px); /* Full viewport height minus header */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Add a dark overlay to the slides */
+.slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the last value (0.3) to make it darker or lighter */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    padding: 2rem 3rem;
+    border-radius: 5px;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn--hero {
+    background-color: #A51C32;
+    color: white;
+    padding: 1.6rem 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    display:inline-block;
+    margin-top: 2rem;
+}
+
+.btn--hero:hover {
+    background-color: #8e182a;
+    transform: translateY(-2px);
+}
+
+/* Slider Controls */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-btn--left {
+    left: 2rem;
+}
+
+.slider-btn--right {
+    right: 2rem;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.dot {
+    width: 40px;
+    height: 5px;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    padding: 0;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        height: 50vh; /* Shorter height on mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .btn--hero {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 50px;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+        display:inline-block;
+        margin-top: 2rem;
+}
+
+    .slider-btn {
+        font-size: 1.5rem;
+        padding: 0.25rem 0.75rem;
+    }
+
+    .slider-btn--left { left: 1rem; }
+    .slider-btn--right { right: 1rem; }
+
+    .dots-container {
+        bottom: 1rem;
+    }
+    .dot {
+        width: 20px;
+        height: 5px;
+    }
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid #A51C32;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Ensure only your own or open-source content is used in HTML, not Lorem Ipsum or unlicensed text */
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
