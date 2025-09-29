@@ -32,15 +32,58 @@
         </nav>
     </header>
     <main>
-        <p>This is the Contact Page.</p>
-        <div id="index_events" class="index_events">
-            <h2>Events</h2>
-            <ul>
-                <li>Event 1: Description of event 1.</li>
-                <li>Event 2: Description of event 2.</li>
-                <li>Event 3: Description of event 3.</li>
-            </ul>
-        </div>
+        <section class="contact-hero">
+            <h1>CONTACT US</h1>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>We'd love to hear from you. Whether you have a question about our programs, admissions, or anything else, our team is ready to answer all your questions.</p>
+                    <div class="info-item">
+                        <strong>Address:</strong><br>
+                        99 Westcliff Road, Weston, MA 02493
+                    </div>
+                    <div class="info-item">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:admin@bibs.education">admin@bibs.education</a>
+                    </div>
+                    <div class="info-item">
+                        <strong>Phone:</strong><br>
+                        <a href="tel:+16178230587">(617) 823-0587</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit" class="btn btn--submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.444467399834!2d-71.3129960239019!3d42.33111197119335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3865616335555%3A0x53a36365e9507f7!2s99+Westcliff+Rd%2C+Weston%2C+MA+02493!5e0!3m2!1sen!2sus!4v1678886400000!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
     </main>
     <footer class="site-footer">
         <div class="footer-container">
@@ -57,9 +100,9 @@
             </div>
             <div class="footer-contact">
                 <h4>CONTACT US</h4>
-                <p><strong>Location:</strong> 123 University Ave, Boston, MA 02115<br>
-                   <strong>Email:</strong> <a href="mailto:info@bibs.edu">info@bibs.edu</a><br>
-                   <strong>Phone:</strong> <a href="tel:+16175551234">(617) 555-1234</a></p>
+                <p><strong>Location:</strong> 99 Westcliff Road, Weston, MA 02493<br>
+                   <strong>Email:</strong> <a href="mailto:admin@bibs.education">admin@bibs.education</a><br>
+                   <strong>Phone:</strong> <a href="tel:+16178230587">(617) 823-0587</a></p>
                 <p class="quote">"See the world as you want it to be and learn how to make it that way."</p>
             </div>
         </div>
