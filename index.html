@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpeg" href="/images/logo.jpg">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
     <title>Boston International Business School</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="shared.css">
     <script defer src="index.js"></script>
     <script defer src="shared.js"></script>
 </head>
+
 <body>
     <header class="main-header">
         <a href="index.html" class="logo"><img src="images/logo.jpg" alt="BIBS Logo"></a>
@@ -38,7 +40,7 @@
                 <h1>Boston International Business School</h1>
                 <a href="about/about.html" class="btn btn--hero">Learn More</a>
             </div>
-    
+
             <!-- Slider Controls -->
             <button class="slider-btn slider-btn--left">&larr;</button>
             <button class="slider-btn slider-btn--right">&rarr;</button>
@@ -53,19 +55,103 @@
                 <div class="about-text">
                     <h2>About Us</h2>
                     <p class="about-subtitle">Elevate Your Business Acumen</p>
-                    <p>Boston International Business School (BIBS) offers innovative business education and a supportive environment for future leaders. Our faculty and students work together to achieve academic and professional excellence.</p>
+                    <p>Boston International Business School (BIBS) offers innovative business education and a supportive
+                        environment for future leaders. Our faculty and students work together to achieve academic and
+                        professional excellence.</p>
                 </div>
             </div>
         </section>
 
-        <div id="index_events" class="index_events">
-            <h2>Events</h2>
-            <ul>
-                <li>Event 1: Description of event 1.</li>
-                <li>Event 2: Description of event 2.</li>
-                <li>Event 3: Description of event 3.</li>
-            </ul>
-        </div>
+        <section class="index-image-section">
+            <div class="index-image-container">
+                <img class="index-image" src="images/scene/scene14.png" alt="Students collaborating on a project">
+                <img class="index-image" src="images/scene/scene15.png" alt="Students collaborating on a project">
+                <img class="index-image" src="images/scene/scene16.png" alt="Students collaborating on a project">
+                <img class="index-image" src="images/scene/scene17.png" alt="Students collaborating on a project">
+                <img class="index-image" src="images/scene/scene22.png" alt="Students collaborating on a project">
+                <img class="index-image" src="images/scene/scene19.png" alt="Students collaborating on a project">
+            </div>
+            <button class="btn btn--view-gallery"
+                onclick="location.href='about/photo-gallery/photo-gallery.html'">Explore More</button>
+        </section>
+
+        <section id="index_events" class="events-section">
+            <div class="events-container">
+                <div class="upcoming-event">
+                    <h2>Upcoming Event</h2>
+                    <div class="upcoming-event-poster">
+                        <div class="upcoming-event-image">
+                            <img src="images/poster/poster1.png" alt="Poster for the Annual Business Innovation Summit">
+                        </div>
+                        <div class="upcoming-event-details">
+                            <h3>Annual Business Innovation Summit</h3>
+                            <p>Understanding the Real Estate Cycles: Structuring Investment, Key Strategies and
+                                Practices</p>
+                            <p>A.I. in Real Estate</p>
+                            <p>MBA Core Curriculum: Case studies - A.I., Capital Market and Global Real Estate
+                                Transactions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="past-events">
+                    <h2>Past Events</h2>
+                    <div class="event-cards-container">
+                        <!-- 8 cards will be here. I'll use a loop for brevity, but you can copy/paste -->
+                        <div class="event-card">
+                            <img src="images/events/event1.png" alt="Event 1">
+                            <h4>BIBS 2025 New Year Party</h4>
+                            <p>A deep dive into modern digital marketing strategies.</p>
+                            <a href="https://mp.weixin.qq.com/s/aLBVrXVoCig3MaCmi_EUDQ" target="_blank"
+                                class="btn btn--card">Read More</a>
+                        </div>
+                        <div class="event-card">
+                            <img src="images/events/event2.png" alt="Event 2">
+                            <h4>Grand Opening of North American Club of Founders (Boston)</h4>
+                            <p>Exploring the qualities of effective leadership in the 21st century.</p>
+                            <a href="https://mp.weixin.qq.com/s/7F2n3akA-8FgQXRXnIyxlQ" target="_blank" class="btn btn--card">Read More</a>
+                        </div>
+                        <div class="event-card">
+                            <img src="images/events/event3.png" alt="Event 3">
+                            <h4>American science and technology innovation exchange tour</h4>
+                            <p>Understanding the disruption and opportunities in financial technology.</p>
+                            <a href="https://mp.weixin.qq.com/s/4UyQb_m1Sf6HD4wIyWD45w" target="_blank" class="btn btn--card">Read More</a>
+                        </div>
+                        <div class="event-card">
+                            <img src="images/events/event4.png" alt="Event 4">
+                            <h4>Whatever Happens Happens for the Best</h4>
+                            <p>Startup founders share their journey from idea to execution.</p>
+                            <a href="https://mp.weixin.qq.com/s/7xbnVNH2tbS7PtqpRlAMcQ" target="_blank" class="btn btn--card">Read More</a>
+                        </div>
+                        <div class="event-card hidden">
+                            <img src="images/events/event5.png" alt="Event 5">
+                            <h4>TechXFluencer Boston</h4>
+                            <p>TechXFluencer is a tech influencer community founded by WeBranding..</p>
+                            <a href="https://mp.weixin.qq.com/s/Rs1KyDAZmKt8qgR5yq5JDA" target="_blank" class="btn btn--card">Read More</a>
+                        </div>
+                        <div class="event-card hidden">
+                            <img src="images/events/event6.png" alt="Event 6">
+                            <h4>Women's Leadership Gala Dinner & Fashion Show Night</h4>
+                            <p>A Night of Charm: Saluting Women Leaders.</p>
+                            <a href="https://mp.weixin.qq.com/s/pPF_91yFaB6uobNqgW_Z9Q" target="_blank" class="btn btn--card">Read More</a>
+                        </div>
+                        <div class="event-card hidden">
+                            <img src="images/events/event7.png" alt="Event 7">
+                            <h4>Goddess Day · Boston Station</h4>
+                            <p>Liu Xiaoqing Spends a Sparkling Night with You.</p>
+                            <a href="https://mp.weixin.qq.com/s/lcmaAAWVoEqVALzIXdg7iA" target="_blank" class="btn btn--card">Read More</a>
+                        </div>
+                        <div class="event-card hidden">
+                            <img src="images/events/event8.png" alt="Event 8">
+                            <h4>Networking Gala</h4>
+                            <p>Our annual event connecting students with alumni and professionals.</p>
+                            <a href="https://mp.weixin.qq.com/s/bCUI6p9TicppN6mjb2s6ew" target="_blank" class="btn btn--card">Read More</a>
+                        </div>
+                    </div>
+                    <button class="btn btn--show-more">Show More</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="site-footer">
         <div class="footer-container">
@@ -74,20 +160,24 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li class="footer-parent-link"><a href="about/about.html">ABOUT</a></li>
-                    <li class="footer-sub-link"><a href="about/leading-professors/leading-professors.html">&ndash; LEADING PROFESSORS</a></li>
-                    <li class="footer-sub-link"><a href="about/photo-gallery/photo-gallery.html">&ndash; PHOTO GALLERY OF BIBS</a></li>
+                    <li class="footer-sub-link"><a href="about/leading-professors/leading-professors.html">&ndash;
+                            LEADING PROFESSORS</a></li>
+                    <li class="footer-sub-link"><a href="about/photo-gallery/photo-gallery.html">&ndash; PHOTO GALLERY
+                            OF BIBS</a></li>
                     <li><a href="#index_events">EVENTS</a></li>
                     <li><a href="contact/contact.html">CONTACT</a></li>
-                </ul>   
+                </ul>
             </div>
             <div class="footer-contact">
                 <h4>CONTACT US</h4>
                 <p><strong>Location:</strong> 123 University Ave, Boston, MA 02115<br>
-                   <strong>Email:</strong> <a href="mailto:info@bibs.edu">info@bibs.edu</a><br>
-                   <strong>Phone:</strong> <a href="tel:+16175551234">(617) 555-1234</a></p>
+                    <strong>Email:</strong> <a href="mailto:info@bibs.edu">info@bibs.edu</a><br>
+                    <strong>Phone:</strong> <a href="tel:+16175551234">(617) 555-1234</a>
+                </p>
                 <p class="quote">"See the world as you want it to be and learn how to make it that way."</p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,87 @@
+.gallery-hero {
+    position: relative;
+    height: 40vh; /* Slightly smaller than About page hero */
+    background-image: url('../../images/scene/scene1.png'); /* Using a general scene image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Dark overlay for better readability */
+.gallery-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.gallery-hero h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    .gallery-hero {
+        height: 30vh;
+    }
+    .gallery-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Photo Gallery Grid */
+.photo-gallery-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.gallery-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px; /* Fixed height for consistent card size */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    display: block; /* Removes extra space below image */
+}
+
+@media (max-width: 768px) {
+    .photo-gallery-section {
+        padding: 2rem 1rem;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller grid items on mobile */
+        gap: 1rem;
+    }
+    .gallery-item img {
+        height: 150px; /* Adjust height for mobile */
+    }
+}

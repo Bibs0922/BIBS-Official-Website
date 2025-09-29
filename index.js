@@ -79,4 +79,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Auto-play ---
     setInterval(nextSlide, slideInterval);
+
+    // --- Show More/Less Events ---
+    const showMoreBtn = document.querySelector('.btn--show-more');
+    const hiddenCards = document.querySelectorAll('.event-card.hidden');
+
+    if (showMoreBtn && hiddenCards.length > 0) {
+        showMoreBtn.addEventListener('click', () => {
+            hiddenCards.forEach(card => {
+                // Toggle display style
+                card.style.display = card.style.display === 'flex' ? 'none' : 'flex';
+            });
+
+            // Change button text
+            const isShowingMore = showMoreBtn.textContent === 'Show More';
+            showMoreBtn.textContent = isShowingMore ? 'Show Less' : 'Show More';
+        });
+    }
 });
