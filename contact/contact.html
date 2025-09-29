@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                         <label for="name">Name <span class="required">*</span></label>
                         <input type="text" id="name" name="name" required>
 
@@ -70,6 +70,7 @@
 
                         <button type="submit" class="btn btn--submit">Submit</button>
                     </form>
+                    <p id="form-status"></p>
                 </div>
             </div>
         </section>
