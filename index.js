@@ -96,4 +96,35 @@ document.addEventListener('DOMContentLoaded', () => {
             showMoreBtn.textContent = isShowingMore ? 'Show Less' : 'Show More';
         });
     }
+
+    // --- Upcoming Event Poster Slider ---
+    const posterSlider = document.querySelector('.upcoming-event-image-slider');
+    if (posterSlider) {
+        const posterSlides = posterSlider.querySelectorAll('.poster-slide');
+        const btnPosterLeft = posterSlider.querySelector('.poster-slider-btn--left');
+        const btnPosterRight = posterSlider.querySelector('.poster-slider-btn--right');
+        let currentPosterSlide = 0;
+        const maxPosterSlide = posterSlides.length - 1;
+
+        const goToPosterSlide = (slideIndex) => {
+            posterSlides.forEach((s, i) => {
+                s.classList.remove('active');
+            });
+            posterSlides[slideIndex].classList.add('active');
+            currentPosterSlide = slideIndex;
+        };
+
+        const nextPosterSlide = () => {
+            currentPosterSlide = (currentPosterSlide === maxPosterSlide) ? 0 : currentPosterSlide + 1;
+            goToPosterSlide(currentPosterSlide);
+        };
+
+        const prevPosterSlide = () => {
+            currentPosterSlide = (currentPosterSlide === 0) ? maxPosterSlide : currentPosterSlide - 1;
+            goToPosterSlide(currentPosterSlide);
+        };
+
+        btnPosterRight.addEventListener('click', nextPosterSlide);
+        btnPosterLeft.addEventListener('click', prevPosterSlide);
+    }
 });
